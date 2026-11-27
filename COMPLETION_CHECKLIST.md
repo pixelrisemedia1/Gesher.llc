@@ -68,3 +68,10 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] Confirmed source homepage media includes three repeated placements of a Base44-hosted logo and the video iframe.
 - [ ] Open Products menu and inspect all product/category destinations; inspect About, Gallery and Contact Us page contents, every product image and downloadable file.
 - [ ] Rebuild newsletter submission with a real independent destination, consent wording, validation and success/error behavior.
+
+
+## Source route audit — additional verified detail
+- [x] Source home/about/gallery/contact routes and embedded YouTube video ID VCAstmdDpqE recorded; video is configured autoplay, muted, loop, with controls hidden.
+- [x] The source `/Products` route was observed returning a Page Not Found response; do not invent a Products page unless source navigation reveals a working destination.
+- [ ] Inventory every Gallery image, caption/order, video thumbnail/poster and downloadable file; current local media includes the logo only outside the archived source bundle.
+- [ ] Replace video dependency with an independently hosted/local asset or a deliberate external embed; verify playback, poster, controls and accessibility.

@@ -41,3 +41,10 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [ ] Check browser console, failed network requests, broken links, 404s, image loading and performance on desktop/mobile.
 - [ ] Verify GitHub Actions deployment succeeds; open the live deployed copy in a fresh session and directly load/refresh every route.
 - [ ] Record final verification date, deployed commit, public URL, and any remaining limitation. Custom domain/DNS is intentionally deferred until requested.
+
+## Verified audit notes — 2026-11-27
+- [x] Inspected source homepage navigation and footer; observed Home, About Us, Products, Gallery, Contact Us, newsletter field, Dubai address, phone, and email.
+- [x] Confirmed source homepage contains a YouTube video iframe and three rendered logo instances; video behavior and all source images need individual comparison.
+- [x] Found that the copied page's header/footer links resolve to root-level paths such as `/AboutUs`, outside the repository subpath on GitHub Pages.
+- [ ] Fix all base-path-aware routes and verify direct load/refresh for every route; product, gallery, contact and newsletter parity remains open.
+- [ ] Reassemble and inspect the split source archive; inventory every product, photo, video, document and downloadable item.

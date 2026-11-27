@@ -61,3 +61,10 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [ ] Scan every repository file, document, metadata field and deployed network request for any remaining third-party/Base44 runtime or media dependency.
 - [ ] Confirm all listed local assets are source-matched and used in the appropriate page; unused files are not removed until their role is understood.
 - [ ] Verify the latest deployment for this checklist commit and smoke-test every route and asset after deployment.
+
+## Gesher source inventory (checked 2026-11-27)
+- [x] Confirmed primary navigation: Home, About Us, Products menu, Gallery, Contact Us; footer includes Visit Us, Quick Links and Newsletter signup.
+- [x] Confirmed public homepage embeds a YouTube video (`VCAstmdDpqE`) set to autoplay muted/loop with controls suppressed; determine whether to retain this external YouTube dependency and verify poster/fallback behavior.
+- [x] Confirmed source homepage media includes three repeated placements of a Base44-hosted logo and the video iframe.
+- [ ] Open Products menu and inspect all product/category destinations; inspect About, Gallery and Contact Us page contents, every product image and downloadable file.
+- [ ] Rebuild newsletter submission with a real independent destination, consent wording, validation and success/error behavior.

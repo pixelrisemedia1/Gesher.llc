@@ -75,3 +75,11 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] The source `/Products` route was observed returning a Page Not Found response; do not invent a Products page unless source navigation reveals a working destination.
 - [ ] Inventory every Gallery image, caption/order, video thumbnail/poster and downloadable file; current local media includes the logo only outside the archived source bundle.
 - [ ] Replace video dependency with an independently hosted/local asset or a deliberate external embed; verify playback, poster, controls and accessibility.
+
+
+## Corrected source route inventory — verified from the Products menu
+- [x] Opened the source Products control and recorded its eight destinations: `/SawnTimber`, `/MDF`, `/Plywood`, `/Chipboard`, `/Logs`, `/OSB`, `/CementBoard` and `/Flooring`.
+- [x] Confirmed `/Products` itself returns the source's Page Not Found screen; Products is a menu control, not a standalone page. The submenu destinations are real source pages and must be replicated.
+- [x] Confirmed individual product pages use product-specific text and image assets; observed local-independent source requests still point to Base44/Supabase media, which must be replaced with local assets.
+- [ ] Build distinct product detail pages with exact source copy, headings, images, responsive layout, navigation and direct-route refresh support for all eight destinations.
+- [ ] Correct prior assumption in any implementation notes: the product category routes are genuine source pages and are required; keep each unchecked until rebuilt and compared.

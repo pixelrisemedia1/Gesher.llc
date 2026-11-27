@@ -53,3 +53,11 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] Source homepage audit captured three displayed instances of the same Base44-hosted logo and an embedded YouTube video player.
 - [ ] Identify whether the YouTube video belongs on the independent site, verify its poster/play/privacy behavior and permissions, and locally host any permitted video/poster/captions or document the external dependency.
 - [ ] Compare the local logo against the source image and inventory media for every product and gallery route.
+
+## Repository-level checks
+- [x] Inspected the repository file tree and confirmed the root homepage file and deployment workflow path.
+- [x] Compared local asset filenames against references in the root homepage HTML.
+- [x] Scanned the root homepage HTML for Base44, Supabase, and Unsplash URL references: none found in `index.html`.
+- [ ] Scan every repository file, document, metadata field and deployed network request for any remaining third-party/Base44 runtime or media dependency.
+- [ ] Confirm all listed local assets are source-matched and used in the appropriate page; unused files are not removed until their role is understood.
+- [ ] Verify the latest deployment for this checklist commit and smoke-test every route and asset after deployment.

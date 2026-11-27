@@ -48,3 +48,8 @@ Rule: Check an item only after comparing against the source or testing the publi
 - [x] Found that the copied page's header/footer links resolve to root-level paths such as `/AboutUs`, outside the repository subpath on GitHub Pages.
 - [ ] Fix all base-path-aware routes and verify direct load/refresh for every route; product, gallery, contact and newsletter parity remains open.
 - [ ] Reassemble and inspect the split source archive; inventory every product, photo, video, document and downloadable item.
+
+### Gesher media verification detail
+- [x] Source homepage audit captured three displayed instances of the same Base44-hosted logo and an embedded YouTube video player.
+- [ ] Identify whether the YouTube video belongs on the independent site, verify its poster/play/privacy behavior and permissions, and locally host any permitted video/poster/captions or document the external dependency.
+- [ ] Compare the local logo against the source image and inventory media for every product and gallery route.

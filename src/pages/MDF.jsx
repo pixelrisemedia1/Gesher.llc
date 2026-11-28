@@ -34,7 +34,7 @@ export default function MDF() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img 
-                src="https://sohotimber.com/wp-content/uploads/2025/07/Plain-MDF-8-1.jpg"
+                src="/Gesher.llc/assets/asset-031.jpg"
                 alt="MDF"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

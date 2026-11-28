@@ -28,7 +28,7 @@ export default function SawnTimber() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <img 
-                src="https://sohotimber.com/wp-content/uploads/2025/07/Add-a-little-bit-of-body-text-15.jpg"
+                src="/Gesher.llc/assets/asset-092.jpg"
                 alt="Sawn Timber"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

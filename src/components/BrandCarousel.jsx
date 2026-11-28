@@ -5,19 +5,19 @@ export default function BrandCarousel() {
   const brands = [
     { 
       name: "DURO", 
-      image: "https://sohotimber.com/wp-content/uploads/2025/07/duro-1.jpg"
+      image: "/Gesher.llc/assets/asset-135.jpg"
     },
     { 
       name: "GP", 
-      image: "https://sohotimber.com/wp-content/uploads/2025/10/GP.jpg"
+      image: "/Gesher.llc/assets/asset-137.jpg"
     },
     { 
       name: "Kronospan", 
-      image: "https://sohotimber.com/wp-content/uploads/2025/09/Untitled-design-3.jpg"
+      image: "/Gesher.llc/assets/asset-127.jpg"
     },
     { 
       name: "MIKA", 
-      image: "https://sohotimber.com/wp-content/uploads/2025/07/mika.jpg"
+      image: "/Gesher.llc/assets/asset-082.jpg"
     },
   ];
 

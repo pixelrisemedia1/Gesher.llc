@@ -44,20 +44,20 @@ export default function Gallery() {
         ],
       "images": {
         "Hardwood - Red Meranti (Malaysian)": [
-          "https://sohotimber.com/wp-content/uploads/2025/07/2X12.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/3x10-red-meranti.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/4x8-sotck-b.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/4x8-stock-a.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/4x8-stock.jpg"
+          "/Gesher.llc/assets/asset-114.jpg",
+          "/Gesher.llc/assets/asset-058.jpg",
+          "/Gesher.llc/assets/asset-016.jpg",
+          "/Gesher.llc/assets/asset-082.jpg",
+          "/Gesher.llc/assets/asset-104.jpg"
         ],
         "Hardwood - Ash wood (American)": [
-          "https://sohotimber.com/wp-content/uploads/2025/07/Ash-Wood-1.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/Ash-Wood-2.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/Ash-Wood-3.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/Ash-wood-kd-1.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/Ash-wood-kd-2.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/Ash-wood-kd-3.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/Ash-wood-kd-4.jpg"
+          "/Gesher.llc/assets/asset-102.jpg",
+          "/Gesher.llc/assets/asset-102.jpg",
+          "/Gesher.llc/assets/asset-102.jpg",
+          "/Gesher.llc/assets/asset-056.jpg",
+          "/Gesher.llc/assets/asset-056.jpg",
+          "/Gesher.llc/assets/asset-056.jpg",
+          "/Gesher.llc/assets/asset-056.jpg"
         ],
         "Hardwood - White Oak (American)": [
           "/Gesher.llc/assets/asset-006.jpg",
@@ -67,17 +67,17 @@ export default function Gallery() {
           "/Gesher.llc/assets/asset-065.jpg"
         ],
         "Hardwood - Red Oak (American)": [
-          "https://sohotimber.com/wp-content/uploads/2025/07/2X6-WIDER-KD.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/2X6-WIDER-KDa.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/2x6-WIDER-KD-b.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/RED-OAK-B.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/RED-OAK-C.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/RED-OAK.jpg"
+          "/Gesher.llc/assets/asset-094.jpg",
+          "/Gesher.llc/assets/asset-082.jpg",
+          "/Gesher.llc/assets/asset-094.jpg",
+          "/Gesher.llc/assets/asset-104.jpg",
+          "/Gesher.llc/assets/asset-104.jpg",
+          "/Gesher.llc/assets/asset-104.jpg"
         ],
         "Hardwood - Cherry wood (American)": [
-          "https://sohotimber.com/wp-content/uploads/2025/07/CHERRY-WOOD.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/CHERRY-WOOD-2.jpg",
-          "https://sohotimber.com/wp-content/uploads/2025/07/CHERRY-WOOD-1.jpg"
+          "/Gesher.llc/assets/asset-118.jpg",
+          "/Gesher.llc/assets/asset-126.jpg",
+          "/Gesher.llc/assets/asset-092.jpg"
         ],
         "Hardwood - Walnut (American)": [
           "/Gesher.llc/assets/asset-013.jpg",

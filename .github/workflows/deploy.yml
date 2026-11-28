@@ -1,9 +1,7 @@
-name: Deploy site to GitHub Pages
+name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - ".github/workflows/**"
   workflow_dispatch:
 permissions:
   contents: read
@@ -11,25 +9,33 @@ permissions:
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - name: Restore local media
+        run: |
+          cat migration/gesher-media.tar.gz.part-* > /tmp/gesher-media.tar.gz
+          mkdir -p public/assets
+          tar -xzf /tmp/gesher-media.tar.gz -C public/assets
+          cp assets/logo.webp public/assets/logo.webp
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    needs: build
     steps:
-      - uses: actions/checkout@v6
-      - name: Prepare independent static site
-        run: |
-          mkdir -p site-dist/assets
-          cp index.html site-dist/index.html
-          cp assets/* site-dist/assets/
-          cp site-dist/index.html site-dist/404.html
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: site-dist
       - id: deployment
         uses: actions/deploy-pages@v4

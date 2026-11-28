@@ -2,32 +2,25 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ChevronDown, Mail } from "lucide-react";
-import { base44 } from "@/api/base44Client";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
+  const [subscriptionRequested, setSubscriptionRequested] = useState(false);
 
-  const handleSubscribe = async (e) => {
+  const handleSubscribe = (e) => {
     e.preventDefault();
-    if (email) {
-      await base44.integrations.Core.SendEmail({
-        to: email,
-        subject: "Welcome to Gesher L.L.C-FZ Newsletter",
-        body: `<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-  <h2 style="color: #C4915C;">Welcome to Gesher L.L.C-FZ!</h2>
-  <p>Thank you for subscribing to our newsletter.</p>
-  <p>You'll be the first to know about our latest products, offers, and news from the UAE's leading timber and construction materials supplier.</p>
-  <br/>
-  <p style="color: #888; font-size: 13px;">Gesher L.L.C-FZ | Business Center 1, M Floor, The Meydan Hotel, Nad Al Sheba, Dubai, U.A.E.</p>
-</div>`
-      });
-      setSubscribed(true);
-      setEmail("");
-      setTimeout(() => setSubscribed(false), 3000);
-    }
+    if (!email) return;
+
+    const subject = encodeURIComponent("Newsletter subscription");
+    const body = encodeURIComponent(
+      `Please add ${email} to the Gesher L.L.C-FZ newsletter.`
+    );
+    window.location.href = `mailto:info@gesher-llc.com?subject=${subject}&body=${body}`;
+    setSubscriptionRequested(true);
+    setEmail("");
+    setTimeout(() => setSubscriptionRequested(false), 5000);
   };
 
   return (
@@ -110,8 +103,8 @@ export default function Footer() {
                   <Mail className="w-4 h-4" />
                 </Button>
               </div>
-              {subscribed && (
-                <p className="text-sm text-green-600">Thank you for subscribing!</p>
+              {subscriptionRequested && (
+                <p className="text-sm text-green-600">Your email app will open to send your request.</p>
               )}
             </form>
           </div>
